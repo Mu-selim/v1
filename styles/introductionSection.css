@@ -1,0 +1,115 @@
+.introBox {
+    display: flex;
+    flex-direction: column;
+    height: min(100vh, 600px);
+    width: (100% - 300px);
+    padding: 80px 150px 0 150px;
+}
+
+.introBox h4 {
+    color: var(--green);
+    word-spacing: 3px;
+    margin-block: 20px;
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: var(--font-mono);
+}
+
+.name {
+    color: var(--lightest-slate);
+    font-size: max(3rem, 7vw); 
+    font-family: 'Calibre';
+}
+
+.description {
+    color: var(--slate);
+    font-size: max(2rem, 5vw); 
+}
+
+.introBox p {
+    color: var(--slate);
+    margin: 20px 0 40px 0;
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: var(--font-sans);
+}
+
+.upwork {
+    position: relative;
+    color: var(--green);
+    text-decoration: none;
+}
+
+.upwork::before {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 0%;
+    content: "";
+    color: transparent;
+    background: var(--green);
+    height: 1px;
+    transition: all 0.4s ease-in 0s;
+}
+
+.upwork:hover::before {
+    width: 100%;
+}
+
+.checkGithub {
+    width: fit-content;
+    color: var(--green);
+    text-decoration: none;
+    padding: 12px 23px;
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+    font-family: var(--font-mono);
+}
+
+.checkGithub:hover {
+    background: var(--green);
+    color: var(--navy);
+}
+
+@media screen and (max-width: 770px) {
+    .introBox {
+        width: (100% - 150px);
+        padding: 80px 75px 0 75px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .introBox {
+        width: calc(100%-20px);
+        padding: 80px 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .introBox p {
+        font-size: 1rem;
+    }
+    .checkGithub {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .name {
+        font-size: 2.1rem;
+    }
+    .description {
+        font-size: 1.2rem;
+    }
+    .introBox p {
+        font-size: 0.8rem;
+    }
+
+    .checkGithub {
+        padding: 6px 12px;
+        font-size: 0.65rem;
+    }
+}

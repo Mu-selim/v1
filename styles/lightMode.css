@@ -1,0 +1,92 @@
+.mode.light {
+    background-image: url("../images/night-mode.png");
+}
+
+body.light-scroll::-webkit-scrollbar-thumb {
+    border-color: var(--light-slate-transparent);
+}
+
+body.light-scroll::-webkit-scrollbar-track {
+    background-color: var(--light-slate-transparent);
+}
+
+.navbarBox.light {
+    background-color: var(--light-slate-transparent);
+}
+
+.container.light {
+    background-color: var(--white);
+}
+
+.anchorNav.light, .listItem:last-child .anchorNav.light {
+    color: var(--navy);
+}
+
+.listBox.active.light {
+    background-color: var(--light-slate);
+}
+
+.listItem:hover .anchorNav {
+    color: var(--green);
+}
+
+.socialIcons.light svg {
+    stroke: var(--navy);
+}
+
+.socialIcons.light:hover svg {
+    stroke: var(--green);
+}
+
+.verticalLine.light {
+    background-color: var(--navy);
+}
+
+.emailText.light {
+    color: var(--navy);
+}
+
+.emailText.light:hover {
+    color: var(--green);
+}
+
+.name.light {
+    color: var(--navy);
+}
+
+.description.light {
+    color: var(--light-navy);
+}
+
+.summary p.light {
+    color: var(--lightest-navy);
+}
+
+.upwork.light::before {
+    background: var(--navy);
+}
+
+.checkGithub.light {
+    color: var(--navy);
+    border-color: var(--navy);
+}
+
+.sectionHeading.light {
+    color: var(--navy);
+}
+
+.sectionLine.light {
+    background-color: var(--navy);
+}
+
+.aboutText p.light {
+    color: var(--light-navy);
+}
+
+.technologyItem.light {
+    color: var(--light-navy);
+}
+
+.personalImage.light::before {
+    border-color: var(--navy);
+}

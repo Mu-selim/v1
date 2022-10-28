@@ -1,0 +1,79 @@
+.socialVertical {
+    position: fixed;
+    width: 80px;
+    height: 80vh;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.iconsBox {
+    width: 40px;
+    height: fit-content;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialIcons svg {
+    width: 20px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.socialIcons svg:hover {
+    transform: translateY(-2px);
+    stroke: var(--green);
+}
+
+.verticalLine {
+    width: 1px;
+    height: 100px;
+    background-color: var(--white);
+}
+
+.emailVertical {
+    position: fixed;
+    width: 80px;
+    height: 80vh;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.emailText {
+    padding: 8px;
+    transform: rotate(90deg) translateX(-100px);
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.2s linear;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+}
+
+.emailText:hover {
+    transform: rotate(90deg) translateX(-102px);
+    color: var(--green);
+}
+
+@media screen and (max-width: 770px) {
+    .socialVertical, .emailVertical {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .socialVertical, .emailVertical {
+        display: none;
+    }
+}

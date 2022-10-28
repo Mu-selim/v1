@@ -1,0 +1,202 @@
+.aboutBox {
+    padding: 80px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.aboutBox.animation {
+    animation: aboutSectionAnim 1.5s ease-in-out;
+    -webkit-animation: aboutSectionAnim 1.5s ease-in-out;
+    -moz-animation: aboutSectionAnim 1.5s ease-in-out;
+}
+
+@keyframes aboutSectionAnim {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.aboutHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sectionNumber {
+    color: var(--green);
+    font-size: 1.5rem;
+    transform: translateY(-4px);
+    font-family: var(--font-mono);
+}
+
+.sectionHeading {
+    color: var(--lightest-slate);
+    font-size: 2rem;
+    font-family: var(--font-sans);
+}
+
+.sectionLine {
+    width: clamp(10%, 35%, 50%);
+    height: 1px;
+    margin: 0 32px;
+    background: var(--green);
+}
+
+@media screen and (max-width: 770px) {
+    .aboutBox {
+        padding-inline: 75px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .aboutHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sectionLine {
+        width: 80%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutBox {
+        padding-inline: 20px;
+    }
+}
+
+.aboutInner {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.aboutText {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutText p {
+    color: var(--slate);
+    font-size: 1.2rem;
+    font-family: var(--font-sans);
+}
+
+.technologiesList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--slate);
+    gap: 8px;
+}
+
+.technologyItem {
+    position: relative;
+    padding-left: 12px;
+    width: 40%;
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+}
+
+.technologyItem::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: var(--green);
+    font-size: 0.8rem;
+    line-height: 12px;
+}
+
+.aboutImage {
+    width: 40%;
+}
+
+.personalImage {
+    position: relative;
+    width: min(400px, 100%);
+    padding-top: min(400px, 100%);
+    background-image: url('../personalPic/formalPicSquare.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 6px;
+    margin: 12px;
+}
+
+.personalImage::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: min(400px, 100%);
+    padding-top: min(400px, 100%);
+    background-color: transparent;
+    border: 2px solid var(--green);
+    border-radius: 6px;
+    transition: all 0.1s linear;
+}
+
+.personalImage:hover::before {
+    top: 8px;
+    left: 8px;
+}
+
+.personalImage:hover::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: min(400px, 100%);
+    padding-top: min(400px, 100%);
+    border-radius: 6px;
+    transition: all 0.1s linear;
+}
+
+.personalImage:hover::after {
+    background-color: var(--green);
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 770px) {
+    .aboutInner {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .aboutText {
+        width: 100%;
+    }
+
+    .aboutImage {
+        width: 90%;
+        padding: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .personalImage {
+        width: clamp(150px, 100%, 400px);
+        padding-top: clamp(150px, 100%, 400px);
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .personalImage::before {
+        top: 8px;
+        left: 8px;
+    }
+    
+    .personalImage:hover::before {
+        top: 4px;
+        left: 4px;
+    }
+}
