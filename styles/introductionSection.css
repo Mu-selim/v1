@@ -15,6 +15,8 @@
     font-weight: lighter;
     font-family: var(--font-mono);
     animation: introanimation 1.2s;
+    -webkit-animation: introanimation 1.2s;
+    -moz-animation: introanimation 1.2s;
 }
 
 .name {
@@ -22,12 +24,16 @@
     font-size: max(3rem, 7vw); 
     font-family: 'Calibre';
     animation: introanimation 1.3s;
+    -webkit-animation: introanimation 1.3s;
+    -moz-animation: introanimation 1.3s;
 }
 
 .description {
     color: var(--slate);
     font-size: max(2rem, 5vw); 
     animation: introanimation 1.4s;
+    -webkit-animation: introanimation 1.4s;
+    -moz-animation: introanimation 1.4s;
 }
 
 .introBox p {
@@ -38,6 +44,8 @@
     line-height: 1.5;
     font-family: var(--font-sans);
     animation: introanimation 1.5s;
+    -webkit-animation: introanimation 1.5s;
+    -moz-animation: introanimation 1.5s;
 }
 
 .upwork {
@@ -73,6 +81,8 @@
     transition: all 0.2s ease-in-out;
     font-family: var(--font-mono);
     animation: introanimation 1.6s;
+    -webkit-animation: introanimation 1.6s;
+    -moz-animation: introanimation 1.6s;
 }
 
 .checkGithub:hover {
@@ -88,30 +98,32 @@
 
     .introBox h4 {
         animation: introanimation 0.8s;
+        -webkit-animation: introanimation 0.8s;
+        -moz-animation: introanimation 0.8s;
     }
     
     .name {
         animation: introanimation 0.9s;
+        -webkit-animation: introanimation 0.9s;
+        -moz-animation: introanimation 0.9s;
     }
     
     .description {
         animation: introanimation 1s;
+        -webkit-animation: introanimation 1s;
+        -moz-animation: introanimation 1s;
     }
     
     .introBox p {
         animation: introanimation 1.2s;
+        -webkit-animation: introanimation 1.2s;
+        -moz-animation: introanimation 1.2s;
     }
 
     .checkGithub {
-        width: fit-content;
-        color: var(--green);
-        text-decoration: none;
-        padding: 12px 23px;
-        border: 1px solid var(--green);
-        border-radius: 4px;
-        transition: all 0.2s ease-in-out;
-        font-family: var(--font-mono);
         animation: introanimation 1.3s;
+        -webkit-animation: introanimation 1.3s;
+        -moz-animation: introanimation 1.3s;
     }
 }
 

@@ -10,6 +10,9 @@
     justify-content: flex-end;
     gap: 20px;
     animation: verticalanimation 1.5s;
+    -webkit-animation: verticalanimation 1.5s;
+    -moz-animation: verticalanimation 1.5s;
+
 }
 
 .iconsBox {
@@ -51,6 +54,8 @@
     justify-content: flex-end;
     gap: 20px;
     animation: verticalanimation 1.5s;
+    -webkit-animation: verticalanimation 1.5s;
+    -moz-animation: verticalanimation 1.5s;
 }
 
 .emailText {
