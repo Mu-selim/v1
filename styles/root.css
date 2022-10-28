@@ -41,6 +41,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -64,6 +65,7 @@ html {
     transition: all 0.2s;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 @media screen and (max-width: 770px) {

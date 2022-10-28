@@ -1,5 +1,5 @@
 .aboutBox {
-    padding: 80px 150px;
+    padding: 100px 150px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -9,17 +9,6 @@
     animation: aboutSectionAnim 1.5s ease-in-out;
     -webkit-animation: aboutSectionAnim 1.5s ease-in-out;
     -moz-animation: aboutSectionAnim 1.5s ease-in-out;
-}
-
-@keyframes aboutSectionAnim {
-    0% {
-        transform: translateY(40px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
 }
 
 .aboutHeader {
@@ -198,5 +187,16 @@
     .personalImage:hover::before {
         top: 4px;
         left: 4px;
+    }
+}
+
+@keyframes aboutSectionAnim {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
