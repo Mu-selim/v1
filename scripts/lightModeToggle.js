@@ -25,8 +25,18 @@ mode.addEventListener('click', ()=> {
     document.querySelectorAll('.aboutText p').forEach(item => {
         item.classList.toggle('light');
     });
+    document.querySelectorAll('.workPlaces').forEach(item => {
+        item.classList.toggle('light');
+    });
+    document.querySelectorAll('.nanodegree').forEach(item => {
+        item.classList.toggle('light');
+    });
     document.querySelectorAll('.technologyItem').forEach(item => {
         item.classList.toggle('light');
     });
     document.querySelector('.personalImage').classList.toggle('light');
+
+
+    document.querySelector('.footer').classList.toggle('light');
+    document.querySelector('.footerLink').classList.toggle('light');
 });

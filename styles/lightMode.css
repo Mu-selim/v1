@@ -83,10 +83,30 @@ body.light-scroll::-webkit-scrollbar-track {
     color: var(--light-navy);
 }
 
+.workPlaces.light::before,
+.nanodegree.light::before {
+    background: var(--navy);
+}
+
 .technologyItem.light {
     color: var(--light-navy);
 }
 
 .personalImage.light::before {
     border-color: var(--navy);
+}
+
+
+
+
+.footer.light {
+    background: var(--white);
+}
+
+.footerLink.light {
+    color: var(--navy);
+}
+
+.footerLink:hover.light {
+    color: var(--green);
 }

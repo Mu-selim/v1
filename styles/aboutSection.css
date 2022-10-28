@@ -80,6 +80,31 @@
     font-family: var(--font-sans);
 }
 
+.workPlaces, .nanodegree {
+    position: relative;
+    text-decoration: none;
+    color: var(--green);
+    white-space: nowrap;
+}
+
+.workPlaces::before,
+.nanodegree::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 0px;
+    height: 1px;
+    background: var(--green);
+    transition: all 0.2s;
+    opacity: 0.5;
+}
+
+.workPlaces:hover::before,
+.nanodegree:hover::before {
+    width: 100%;
+}
+
 .technologiesList {
     list-style: none;
     display: flex;
