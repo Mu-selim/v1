@@ -1,5 +1,6 @@
-const socialIcons = document.querySelectorAll('.socialIcons');
+onload = () => { document.querySelector('.navbarBox').classList.remove('scrollingDown'); }
 
+const socialIcons = document.querySelectorAll('.socialIcons');
 socialIcons[0].insertAdjacentHTML('afterbegin', githubIcon());
 socialIcons[1].insertAdjacentHTML('afterbegin', twitterIcon());
 socialIcons[2].insertAdjacentHTML('afterbegin', linkedinIcon());

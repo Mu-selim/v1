@@ -4,7 +4,7 @@ let aboutobserver = new IntersectionObserver((entries) => {
     const entry = entries[0];
     const {isIntersecting} = entry;
     if (isIntersecting) {
-        console.log('yes');
+        // console.log('yes');
         aboutBox.classList.add('animation');
         aboutobserver.unobserve(aboutBox);
     }
