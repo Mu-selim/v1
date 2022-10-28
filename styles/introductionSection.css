@@ -13,17 +13,20 @@
     font-size: 1rem;
     font-weight: lighter;
     font-family: var(--font-mono);
+    animation: introanimation 1.4s;
 }
 
 .name {
     color: var(--lightest-slate);
     font-size: max(3rem, 7vw); 
     font-family: 'Calibre';
+    animation: introanimation 1.5s;
 }
 
 .description {
     color: var(--slate);
     font-size: max(2rem, 5vw); 
+    animation: introanimation 1.6s;
 }
 
 .introBox p {
@@ -33,6 +36,7 @@
     font-size: 1.2rem;
     line-height: 1.5;
     font-family: var(--font-sans);
+    animation: introanimation 1.7s;
 }
 
 .upwork {
@@ -67,6 +71,7 @@
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
     font-family: var(--font-mono);
+    animation: introanimation 1.9s;
 }
 
 .checkGithub:hover {
@@ -78,6 +83,34 @@
     .introBox {
         width: (100% - 150px);
         padding: 80px 75px 0 75px;
+    }
+
+    .introBox h4 {
+        animation: introanimation 1s;
+    }
+    
+    .name {
+        animation: introanimation 1.1s;
+    }
+    
+    .description {
+        animation: introanimation 1.2s;
+    }
+    
+    .introBox p {
+        animation: introanimation 1.3s;
+    }
+
+    .checkGithub {
+        width: fit-content;
+        color: var(--green);
+        text-decoration: none;
+        padding: 12px 23px;
+        border: 1px solid var(--green);
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out;
+        font-family: var(--font-mono);
+        animation: introanimation 1.5s;
     }
 }
 
@@ -111,5 +144,20 @@
     .checkGithub {
         padding: 6px 12px;
         font-size: 0.65rem;
+    }
+}
+
+@keyframes introanimation {
+    0% {
+        transform: translateY(12px);
+        opacity: 0;
+    }
+    70% {
+        transform: translateY(12px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
