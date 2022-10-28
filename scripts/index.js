@@ -20,3 +20,22 @@ technologies.forEach(technology => {
         `<li class="technologyItem">${technology}</li>`
         );
 });
+
+const githubStarFork = () => {
+    const githubStars = document.querySelector('.githubStars');
+    let component = `
+    <span class="starIcon">
+        ${starIcon()}
+        <span class="starCount"></span>
+    </span>`;
+    githubStars.insertAdjacentHTML('beforeend', component);
+
+    component = `
+    <span class="forkIcon">
+        ${forkIcon()}
+        <span class="forkCount"></span>
+    </span>`;
+    githubStars.insertAdjacentHTML('beforeend', component);
+}
+
+githubStarFork();
