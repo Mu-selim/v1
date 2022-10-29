@@ -21,6 +21,10 @@ technologies.forEach(technology => {
         );
 });
 
+const placesListItem = document.querySelector('.placesListItems');
+placesListItem.classList.add('active');
+document.querySelector('.placesInner').insertAdjacentHTML('afterbegin', gmind());
+
 const githubStarFork = () => {
     const githubStars = document.querySelector('.githubStars');
     let component = `

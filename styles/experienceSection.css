@@ -4,6 +4,12 @@
     flex-direction: column;
 }
 
+.experienceBox.animation {
+    animation: experienceSectionAnim 1s;
+    -webkit-animation: experienceSectionAnim 1s;
+    -moz-animation: experienceSectionAnim 1s;
+}
+
 @media screen and (max-width: 700px) {
     .experienceBox {
         padding: 100px 10%;
@@ -50,10 +56,6 @@
     margin-left: 20px;
     background-color: var(--lightest-navy);
 }
-
-
-
-
 
 .experienceInner {
     width: 100%;
@@ -111,7 +113,7 @@
     transition: all 0.8s;
 }
 
-.placesListItems:hover::before {
+.placesListItems.active::before {
     height: 100%;
     background: var(--green);
 }
@@ -119,6 +121,12 @@
 .placesInner {
     display: flex;
     flex-direction: column;
+}
+
+.placesInner * {
+    animation: placeAnim 0.5s;
+    -webkit-animation: placeAnim 0.5s;
+    -moz-animation: placeAnim 0.5s;
 }
 
 .placesInner h3 {
@@ -230,50 +238,7 @@
         transition: all 0.8s;
     }
 
-    .placesListItems:hover::after {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .experienceInner {
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .placesList {
-        flex-direction: row;
-        width: 100%;
-        overflow-x: auto;
-    }
-
-    .placesList::before {
-        top: 0px;
-        left: 0px;
-        height: 2px;
-    }
-
-    .placesListItems {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .placesListItems::before {
-        display: none;
-    }
-
-    .placesListItems::after {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 0px;
-        height: 2px;
-        background-color: var(--green);
-        transition: all 0.8s;
-    }
-
-    .placesListItems:hover::after {
+    .placesListItems.active::after {
         width: 100%;
     }
 }
@@ -300,5 +265,25 @@
     }
     .jobDecriptionItem {
         font-size: 1rem;
+    }
+}
+
+@keyframes experienceSectionAnim {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes placeAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
