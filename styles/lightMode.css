@@ -96,7 +96,33 @@ body.light-scroll::-webkit-scrollbar-track {
     border-color: var(--navy);
 }
 
+.experienceHeader.light {
+    color: var(--navy);
+}
 
+.experienceHeader.light {
+    color: var(--navy);
+}
+
+.placesListItems.light {
+    color: var(--navy);
+}
+
+.placesListItems.light:hover {
+    background: var(--lightest-slate);
+}
+
+.placesInner.light h3 .jobTitle {
+    color: var(--navy);
+}
+
+.placesInner.light .range {
+    color: var(--light-navy);
+}
+
+.placesInner.light .jobDecription li {
+    color: var(--dark-slate);
+}
 
 
 .footer.light {

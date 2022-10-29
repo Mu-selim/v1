@@ -1,0 +1,304 @@
+.experienceBox {
+    padding: 100px 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+    .experienceBox {
+        padding: 100px 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .experienceBox {
+        padding: 100px 20px;
+    }
+}
+
+.experienceHeader {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size: clamp(26px,5vw,32px);
+    font-family: var(--font-sans);
+    color: var(--lightest-slate);
+    font-weight: 600;
+    position: relative;
+    margin: 10px 0px 40px;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+.experienceHeader::before {
+    position: relative;
+    bottom: 4px;
+    content: "02.";
+    margin-right: 10px;
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(16px,3vw,20px);
+    font-weight: 400;
+}
+
+.experienceHeader::after {
+    content: "";
+    display: block;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--lightest-navy);
+}
+
+
+
+
+
+.experienceInner {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.placesList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.placesList::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 2px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--lightest-navy);
+}
+
+.placesListItems {
+    position: relative;
+    font-family: var(--font-mono);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+    color: var(--green);
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.placesListItems:hover {
+    background: var(--light-navy);
+}
+
+.placesListItems::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 0%;
+    border-radius: 20px;
+    transition: all 0.8s;
+}
+
+.placesListItems:hover::before {
+    height: 100%;
+    background: var(--green);
+}
+
+.placesInner {
+    display: flex;
+    flex-direction: column;
+}
+
+.placesInner h3 {
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.placesInner h3 .jobTitle {
+    color: var(--lightest-slate);;
+}
+
+.placesInner h3 .company {
+    color: var(--green);
+    white-space: nowrap;
+}
+
+.placeName {
+    position: relative;
+    text-decoration: none;
+    color: var(--green);
+}
+
+.placeName::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 4px;
+    width: 0%;
+    height: 1px;
+    background: var(--green);
+    transition: all 0.2s;
+}
+
+.placeName:hover::before {
+    width: 100%;
+}
+
+.range {
+    color: var(--light-slate);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.jobDecription {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.jobDecriptionItem {
+    position: relative;
+    color: var(--slate);
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    line-height: 1.3;
+    padding-left: 28px;
+}
+
+.jobDecriptionItem::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    color: var(--green);
+    font-size: 1rem;
+    line-height: 12px;
+}
+
+@media screen and (max-width: 700px) {
+    .experienceInner {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .placesList {
+        flex-direction: row;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .placesList::before {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+    }
+
+    .placesListItems {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .placesListItems::before {
+        display: none;
+    }
+
+    .placesListItems::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 2px;
+        background-color: var(--green);
+        transition: all 0.8s;
+    }
+
+    .placesListItems:hover::after {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .experienceInner {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .placesList {
+        flex-direction: row;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .placesList::before {
+        top: 0px;
+        left: 0px;
+        height: 2px;
+    }
+
+    .placesListItems {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .placesListItems::before {
+        display: none;
+    }
+
+    .placesListItems::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 2px;
+        background-color: var(--green);
+        transition: all 0.8s;
+    }
+
+    .placesListItems:hover::after {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .placesList::before {
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 2px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .experienceHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .experienceHeader::after {
+        margin: 0;
+        width: 100%;
+    }
+    .jobDecriptionItem {
+        font-size: 1rem;
+    }
+}

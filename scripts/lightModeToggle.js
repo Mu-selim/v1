@@ -35,7 +35,13 @@ mode.addEventListener('click', ()=> {
         item.classList.toggle('light');
     });
     document.querySelector('.personalImage').classList.toggle('light');
-
+    document.querySelector('.experienceHeader').classList.toggle('light');
+    document.querySelectorAll('.placesListItems').forEach(item => {
+        item.classList.toggle('light');
+    });
+    document.querySelector('.placesInner').classList.toggle('light');
+    document.querySelector('.').classList.toggle('light');
+    document.querySelector('.').classList.toggle('light');
 
     document.querySelector('.footer').classList.toggle('light');
     document.querySelector('.footerLink').classList.toggle('light');
