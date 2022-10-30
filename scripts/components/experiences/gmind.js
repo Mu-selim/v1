@@ -9,8 +9,9 @@ const gmind = () => {
     </h3>
     <p class="range">August 2022 - Present</p>
     <ul class="jobDecription">
-        <li class="jobDecriptionItem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum consectetur, blanditiis ducimus eaque quia illum alias ab, autem voluptatem nobis</li>
-        <li class="jobDecriptionItem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum consectetur, blanditiis ducimus eaque quia illum alias ab, autem voluptatem nobis</li>
-        <li class="jobDecriptionItem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum consectetur, blanditiis ducimus eaque quia illum alias ab, autem voluptatem nobis</li>
+        <li class="jobDecriptionItem">Developed GMind's android application, an application for educational purposes, using Java and XML.</li>
+        <li class="jobDecriptionItem">Worked closely with designers and management team to develop and manage the company application.</li>
+        <li class="jobDecriptionItem">Got knowledge about Version Control (Git) and learned a lot about Linux commands.</li>
+        <li class="jobDecriptionItem">Developed my communication skills and teamwork skills too.</li>
     </ul>`;
 }

@@ -9,8 +9,7 @@ const iti = () => {
     </h3>
     <p class="range">February 2022 - March 2022</p>
     <ul class="jobDecription">
-        <li class="jobDecriptionItem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum consectetur, blanditiis ducimus eaque quia illum alias ab, autem voluptatem nobis</li>
-        <li class="jobDecriptionItem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum consectetur, blanditiis ducimus eaque quia illum alias ab, autem voluptatem nobis</li>
-        <li class="jobDecriptionItem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum consectetur, blanditiis ducimus eaque quia illum alias ab, autem voluptatem nobis</li>
+        <li class="jobDecriptionItem">Got 60 hours of intensive training in Front-end development using HTML, CSS, and JavaScript (ES6).</li>
+        <li class="jobDecriptionItem">Built projects such as stopwatch, form validation, and salary system using pure JavaScript.</li>
     </ul>`;
 }

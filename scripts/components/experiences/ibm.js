@@ -9,8 +9,8 @@ const ibm = () => {
     </h3>
     <p class="range">February 2022 - March 2022</p>
     <ul class="jobDecription">
-        <li class="jobDecriptionItem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum consectetur, blanditiis ducimus eaque quia illum alias ab, autem voluptatem nobis</li>
-        <li class="jobDecriptionItem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum consectetur, blanditiis ducimus eaque quia illum alias ab, autem voluptatem nobis</li>
-        <li class="jobDecriptionItem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum consectetur, blanditiis ducimus eaque quia illum alias ab, autem voluptatem nobis</li>
+        <li class="jobDecriptionItem">Developed and maintained code for a landing page using HTML, CSS, and JavaScript.</li>
+        <li class="jobDecriptionItem">Tested sites in several browsers and mobile devices to ensure cross-browser compatibility and responsiveness.</li>
+        <li class="jobDecriptionItem">Added some unit tests using Jest framework.</li>
     </ul>`;
 }
