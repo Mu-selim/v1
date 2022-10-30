@@ -124,6 +124,29 @@ body.light-scroll::-webkit-scrollbar-track {
     color: var(--dark-slate);
 }
 
+.workHeader.light {
+    color: var(--navy);
+}
+
+.featuredProjectTitle.light {
+    color: var(--navy);
+}
+
+.featuredCard.light {
+    background-color: var(--lightest-slate);
+}
+
+.featuredCard.light p {
+    color: var(--light-navy);
+}
+
+.toolsList.light {
+    color: var(--lightest-navy);
+}
+
+
+
+
 
 .footer.light {
     background: var(--white);

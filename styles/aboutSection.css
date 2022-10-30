@@ -173,7 +173,8 @@
     width: min(400px, 100%);
     padding-top: min(400px, 100%);
     border-radius: 6px;
-    transition: all 0.1s linear;
+    transition: all 0.s linear;
+    mix-blend-mode: screen;
 }
 
 .personalImage:hover::after {
