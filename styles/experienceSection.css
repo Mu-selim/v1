@@ -124,9 +124,9 @@
 }
 
 .placesInner * {
-    animation: placeAnim 0.5s;
-    -webkit-animation: placeAnim 0.5s;
-    -moz-animation: placeAnim 0.5s;
+    animation: placeAnim 0.3s;
+    -webkit-animation: placeAnim 0.2s;
+    -moz-animation: placeAnim 0.3s;
 }
 
 .placesInner h3 {
