@@ -69,56 +69,52 @@
     }
 }
 
+
 .featuredList {
+    list-style: none;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 60px;
 }
 
-.featuredItems:nth-child(odd) {
+.projectContent {
+    width: 100%;
     display: flex;
     align-items: center;
 }
 
-.featuredItems:nth-child(even) {
-    display: flex;
+.featuredItems:nth-child(even) .projectContent {
     flex-direction: row-reverse;
-    align-items: center;
 }
-
 
 .porjectImageBox {
-    position: relative;
     width: 55%;
-    padding-top: 40%;
-    background-image: url("https://user-images.githubusercontent.com/89293751/198900434-091889e4-3c1d-46ac-93e2-5cf69ad57f8f.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    overflow: hidden;
     cursor: pointer;
-    border-radius: 8px;
+}
+
+.porjectImageBox img {
+    width: 100%;
     transition: all 0.2s;
 }
 
-.porjectImageBox:hover {
-    overflow: hidden;
+.porjectImageBox:hover img {
     transform: scale(1.1);
-} 
+}
 
-.featuredItems .innerFeatured {
+.innerFeatured {
     width: 45%;
     display: flex;
     flex-direction: column;
-    z-index: 3;
 }
 
-.featuredItems:nth-child(odd) .innerFeatured {
+.featuredItems:nth-child(odd) .projectContent .innerFeatured {
     align-items: flex-end;
 }
 
-.featuredItems:nth-child(even) .innerFeatured {
-    align-items: flex-start;
+.featuredItems:nth-child(odd) .projectContent .innerFeatured * {
+    text-align: end;
 }
 
 .featuredProjects {
@@ -126,15 +122,17 @@
     font-family: var(--font-mono);
     font-weight: 400;
     font-size: 0.8rem;
-    margin: 8px 0px;
+    margin: 12px 0px;
 }
 
 .featuredProjectTitle {
     text-decoration: none;
+    margin-bottom: 24px;
     color: var(--lightest-slate);
     font-size: clamp(24px, 5vw, 28px);
+    font-weight: 600;
+    font-family: var(--font-sans);
     transition: all 0.2s;
-    margin-bottom: 20px;
 }
 
 .featuredProjectTitle:hover {
@@ -142,27 +140,19 @@
 }
 
 .featuredCard {
-    padding: 16px;
-    margin-bottom: 32px;
     width: 110%;
+    padding: 20px;
     background-color: var(--light-navy);
     color: var(--light-slate);
-    border-radius: 4px;
-    box-shadow: 0 10px 4px -15px;
+    font-family: var(--font-sans);
+    line-height: 1.3;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+    z-index: 2;
 }
 
-.featuredItems:nth-child(odd) .featuredCard p {
-    text-align: end;
-    font-family: var(--font-sans);
-    font-size: 1.2rem;
-    line-height: 1.3;
-}
-
-.featuredItems:nth-child(even) .featuredCard p {
-    text-align: start;
-    font-family: var(--font-sans);
-    font-size: 1.2rem;
-    line-height: 1.3;
+.featuredCard:hover {
+    box-shadow: 0 20px 30px -15px var(--navy-shadow);
 }
 
 .toolsPackages {
@@ -177,9 +167,8 @@
     position: absolute;
     left: 0px;
     bottom: 0px;
-    width: 0%;
+    width: 0px;
     height: 1px;
-    opacity: 0.5;
     background-color: var(--green);
     transform: translateY(-2px);
     transition: all 0.2s;
@@ -190,86 +179,120 @@
 }
 
 .toolsList {
-    margin-bottom: 40px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin: 20px 0;
     color: var(--slate);
     font-family: var(--font-sans);
+    font-size: var(1rem);
+    line-height: 1.3;
 }
 
 .linkIcons {
     display: flex;
-    gap: 32px;
+    gap: 20px;
 }
 
 .linkIcons a {
-    width: 32px;
-    height: 32px;
+    text-decoration: none;
 }
 
 .linkIcons a svg {
-    stroke: var(--slate);
+    stroke: var(--white);
+    width: 32px;
+    height: 32px;
     transition: all 0.2s;
 }
 
 .linkIcons a:hover svg {
     stroke: var(--green);
-}
-
-@media screen and (max-width: 770px) {
-    .porjectImageBox {
-        position: relative;
-        width: 65%;
-        padding-top: 60%;
-    }
-
-    .featuredProjects {
-        margin: 4px 0px;
-    }
-
-    .toolsList {
-        margin-bottom: 24px;
-    }
-
-    .linkIcons a {
-        width: 26px;
-        height: 26px;
-    }
+    transform: translateY(-2px);
 }
 
 @media screen and (max-width: 600px) {
-    .featuredItems:nth-child(n) {
-        flex-direction: column-reverse;
-        gap: 40px;
+    .porjectImageBox {
+        display: none;
     }
-    
-    .featuredItems:nth-child(n) .porjectImageBox {
-        width: 100%;
-        padding-top: 60%;
-    }
-    
-    .featuredItems:nth-child(n) .innerFeatured {
-        width: 100%;
+   
+    .featuredItems:nth-child(n) .projectContent .innerFeatured {
+        padding: 20px;
+        width: calc(100% - 40px);
+        height: calc(100% - 40px);
+        background-color: var(--dark-navy-tint);
+        align-items: flex-start;
+        transition: all 0.2s;
     }
 
-    .featuredItems:nth-child(n) .innerFeatured .featuredCard {
-        width: calc(100% - 32px);
-        padding: 20px 16px;
-        margin-bottom: 12px;
+    .featuredItems:nth-child(n) .projectContent .innerFeatured:hover {
+        cursor: pointer;
+        box-shadow: 0 20px 30px -15px var(--navy-shadow);
+    }
+
+    .featuredItems:nth-child(odd) .projectContent .innerFeatured * {
+        text-align: start;
     }
 
     .featuredProjects {
-        margin: 4px 0px;
+        color: var(--green);
+        font-family: var(--font-mono);
+        font-weight: 400;
+        font-size: 0.8rem;
+        margin: 12px 0px;
     }
 
-    .toolsList {
+    .featuredCard {
+        padding: 0;
+        width: calc(100% - 40px);
+        background-color: transparent;
+        cursor: auto;
+    }
+
+    .featuredCard:hover {
+        box-shadow: none;
+    }
+
+    .linkIcons a svg {
+        width: 24px;
+        height: 24px;
+    }    
+}
+
+@media screen and (max-width: 400px) {
+    .featuredProjects {
+        font-size: 0.7rem;
+    }
+
+    .featuredProjectTitle {
         margin-bottom: 16px;
     }
     
-    .linkIcons a {
-        width: 20px;
-        height: 20px;
+    .featuredCard {
+        font-size: 1rem;
+        padding: 0;
+        width: calc(100% - 40px);
+        background-color: transparent;
+        cursor: auto;
     }
+    
+    .featuredCard:hover {
+        box-shadow: none;
+    }
+    
+    .toolsList {
+        gap: 16px;
+        margin: 8px 0 16px 0;
+        font-size: 0.8rem;
+        line-height: 1.1;
+    }
+    
+    .linkIcons {
+        gap: 16px;
+    }
+    
+    .linkIcons a svg {
+        width: 16px;
+        height: 16px;
+    }    
 }

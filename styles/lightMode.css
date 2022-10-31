@@ -133,7 +133,7 @@ body.light-scroll::-webkit-scrollbar-track {
 }
 
 .featuredCard.light {
-    background-color: var(--lightest-slate);
+    background-color: transparent;
 }
 
 .featuredCard.light p {

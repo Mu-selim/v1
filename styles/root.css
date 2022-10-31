@@ -19,6 +19,7 @@
 
 :root {
     --dark-navy: #020c1b;
+    --dark-navy-tint: #020c1ba2;
     --navy: #0a192f;
     --navy-transparent: #0a192fc2;
     --light-navy: #112240;
@@ -79,5 +80,6 @@ html {
         background-color: transparent;
         backdrop-filter: blur(2px);
         -webkit-backdrop-filter: blur(2px);
+        z-index: 3;
     }
 }
