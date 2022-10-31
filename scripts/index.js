@@ -25,6 +25,12 @@ const placesListItem = document.querySelector('.placesListItems');
 placesListItem.classList.add('active');
 document.querySelector('.placesInner').insertAdjacentHTML('afterbegin', gmind());
 
+const featuredList = document.querySelector('.featuredList');
+featuredList.insertAdjacentHTML('beforeend', LoopStudiosProject());
+featuredList.insertAdjacentHTML('beforeend', SunnysideProject());
+featuredList.insertAdjacentHTML('beforeend', IntroSectionProject());
+featuredList.insertAdjacentHTML('beforeend', AdviceGeneratorProject());
+
 const githubStarFork = () => {
     const githubStars = document.querySelector('.githubStars');
     let component = `
