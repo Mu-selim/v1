@@ -15,13 +15,9 @@ const LoopStudiosProject = () => {
                 <a class="featuredProjectTitle" href="${deploymentLink}" target="_blank"><h3>${"Loopstudios"}</h3></a>
                 <div class="featuredCard">
                     <p>
-                        A minimal, dark blue theme for VS Code, 
-                        Sublime Text, Atom, iTerm, and more. 
-                        Available on Visual Studio Marketplace, 
-                        Package Control, Atom Package Manager, 
-                        and 
-                        <a class="toolsPackages" href="" target="_blank" >npm</a>
-                        .
+                        
+                        <a class="toolsPackages" href="" target="_blank" ></a>
+                        A static landing page covers mostly all screen sizes, built using HTML, CSS and Vanilla javascript.
                     </p>
                 </div>
                 <ul class="toolsList">
@@ -29,6 +25,8 @@ const LoopStudiosProject = () => {
                     <li class="toolsItems">${"CSS"}</li>
                     <li class="toolsItems">${"HTML"}</li>
                     <li class="toolsItems">${"Responsive"}</li>
+                    <li class="toolsItems">${"flexbox & grid"}</li>
+                    <li class="toolsItems">${"Styled Components"}</li>
                 </ul>
                 <div class="linkIcons">
                     <a href="${repoLink}" target="_blank">

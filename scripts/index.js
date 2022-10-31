@@ -27,9 +27,9 @@ document.querySelector('.placesInner').insertAdjacentHTML('afterbegin', gmind())
 
 const featuredList = document.querySelector('.featuredList');
 featuredList.insertAdjacentHTML('beforeend', LoopStudiosProject());
+featuredList.insertAdjacentHTML('beforeend', AdviceGeneratorProject());
 featuredList.insertAdjacentHTML('beforeend', SunnysideProject());
 featuredList.insertAdjacentHTML('beforeend', IntroSectionProject());
-featuredList.insertAdjacentHTML('beforeend', AdviceGeneratorProject());
 
 const githubStarFork = () => {
     const githubStars = document.querySelector('.githubStars');

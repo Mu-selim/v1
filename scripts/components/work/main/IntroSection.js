@@ -14,13 +14,9 @@ const IntroSectionProject = () => {
                 <a class="featuredProjectTitle" href="${deploymentLink}" target="_blank"><h3>${"Intro Section"}</h3></a>
                 <div class="featuredCard">
                     <p>
-                        A minimal, dark blue theme for VS Code, 
-                        Sublime Text, Atom, iTerm, and more. 
-                        Available on Visual Studio Marketplace, 
-                        Package Control, Atom Package Manager, 
-                        and 
-                        <a class="toolsPackages" href="" target="_blank" >npm</a>
-                        .
+                        A single-page web page for the introduction section 
+                        with dropdown navigation and a responsive navigation bar too. 
+                        <a class="toolsPackages" href="" target="_blank" ></a>
                     </p>
                 </div>
                 <ul class="toolsList">

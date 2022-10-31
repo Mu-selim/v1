@@ -14,19 +14,17 @@ const SunnysideProject = () => {
                 <a class="featuredProjectTitle" href="${deploymentLink}" target="_blank"><h3>${"Sunnyside agency"}</h3></a>
                 <div class="featuredCard">
                     <p>
-                        A minimal, dark blue theme for VS Code, 
-                        Sublime Text, Atom, iTerm, and more. 
-                        Available on Visual Studio Marketplace, 
-                        Package Control, Atom Package Manager, 
-                        and 
-                        <a class="toolsPackages" href="" target="_blank" >npm</a>
-                        .
+                        A frontend mentor challenge, the Landing page helps 
+                        marketers achieve various objectives as a result 
+                        of numerous marketing goals.
+                        <a class="toolsPackages" href="" target="_blank"></a>
                     </p>
                 </div>
                 <ul class="toolsList">
-                    <li class="toolsItems">${"HTML"}</li>
-                    <li class="toolsItems">${"CSS"}</li>
                     <li class="toolsItems">${"JavaScript"}</li>
+                    <li class="toolsItems">${"CSS"}</li>
+                    <li class="toolsItems">${"HTML"}</li>
+                    <li class="toolsItems">${"Styled Components"}</li>
                 </ul>
                 <div class="linkIcons">
                     <a href="${repoLink}" target="_blank">
