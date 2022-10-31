@@ -50,6 +50,9 @@ mode.addEventListener('click', ()=> {
     document.querySelectorAll('.toolsList').forEach(item => {
         item.classList.toggle('light');
     });
+    document.querySelectorAll('.linkIcons').forEach(item => {
+        item.classList.toggle('light');
+    });
 
 
 

@@ -133,7 +133,13 @@ body.light-scroll::-webkit-scrollbar-track {
 }
 
 .featuredCard.light {
-    background-color: transparent;
+    background-color: var(--lightest-slate);
+}
+
+@media screen and (max-width: 600px) {
+    .featuredCard.light {
+        background-color: transparent;
+    }
 }
 
 .featuredCard.light p {
@@ -144,6 +150,13 @@ body.light-scroll::-webkit-scrollbar-track {
     color: var(--lightest-navy);
 }
 
+.linkIcons.light a svg {
+    stroke: var(--navy);
+}
+
+.linkIcons.light a:hover svg {
+    stroke: var(--green);
+}
 
 
 

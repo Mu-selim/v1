@@ -28,7 +28,7 @@ const LoopStudiosProject = () => {
                     <li class="toolsItems">${"JavaScript"}</li>
                     <li class="toolsItems">${"CSS"}</li>
                     <li class="toolsItems">${"HTML"}</li>
-                    <li class="toolsItems">${"HTML"}</li>
+                    <li class="toolsItems">${"Responsive"}</li>
                 </ul>
                 <div class="linkIcons">
                     <a href="${repoLink}" target="_blank">
