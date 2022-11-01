@@ -1,23 +1,43 @@
-const otherWorkProjects = () => {
-    let projects = [];
-    for(let i = 0; i < 11; i++) {
-        projects.push(personalWebsiteV1());
-    }
-    const workGridBox = document.querySelector('.workGridBox');
-
-    for(let i = 0; i < 5; i++) {
-        workGridBox.insertAdjacentHTML('beforeend', projects[i]);
-    }
-
-    // for(let i = 5; i < projects.length; i++) {
-    //     projects.push(personalWebsiteV1());
-    // }
+let projects = [];
+for(let i = 0; i < 11; i++) {
+    projects.push(personalWebsiteV1());
 }
 
-otherWorkProjects();
+const initialProjects = () => {
+    const workGridBox = document.querySelector('.workGridBox');
+    workGridBox.innerHTML = "";
+
+    for(let i = 0; i < Math.min(4, projects.length); i++) {
+        workGridBox.insertAdjacentHTML('beforeend', projects[i]);
+    }
+}
+
+const allProjects = () => {
+    const workGridBox = document.querySelector('.workGridBox');
+    workGridBox.innerHTML = "";
+
+    for(let i = 0; i < projects.length; i++) {
+        workGridBox.insertAdjacentHTML('beforeend', projects[i]);
+    }
+}
+
+initialProjects();
 
 const otherWork = document.querySelector('.otherWork');
 otherWork.addEventListener('click', ()=> {
-    
-})
-document.querySelector('.LoadingBox div').classList.add('buttonLoading');
+    const loader = document.querySelector('.LoadingBox div');
+          loadText = document.querySelector('.showMore h3');
+    loader.classList.add('buttonLoading');
+    loadText.style.opacity = "0";
+    setTimeout(() => {
+        if (loadText.textContent == "Show More") {
+            loadText.textContent = "Show Less";
+            allProjects();
+        } else {
+            loadText.textContent = "Show More";
+            initialProjects(); 
+        }
+        loader.classList.remove('buttonLoading');
+        loadText.style.opacity = "1";
+    }, 500);
+});
