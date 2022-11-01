@@ -23,7 +23,7 @@ const allProjects = () => {
 
 initialProjects();
 
-const otherWork = document.querySelector('.otherWork');
+const otherWork = document.querySelector('.showMore');
 otherWork.addEventListener('click', ()=> {
     const loader = document.querySelector('.LoadingBox div');
           loadText = document.querySelector('.showMore h3');
