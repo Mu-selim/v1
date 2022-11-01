@@ -190,6 +190,22 @@ body.light-scroll::-webkit-scrollbar-track {
     color: var(--lightest-navy);
 }
 
+.showMore.light {
+    border: 1px solid var(--navy);
+}
+
+.showMore.light:hover {
+    background-color: var(--green);
+}
+
+.showMore.light h3 {
+    color: var(--navy);
+}
+
+.showMore.light .LoadingBox .buttonLoading {
+    border: 2px solid var(--navy);
+    border-bottom-color: transparent;
+}
 
 
 .footer.light {

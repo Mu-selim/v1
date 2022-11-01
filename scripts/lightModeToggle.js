@@ -69,7 +69,7 @@ mode.addEventListener('click', ()=> {
     document.querySelectorAll('.gridProjectTechList').forEach(item => {
         item.classList.toggle('light');
     });
-
+    document.querySelector('.showMore').classList.toggle('light');
 
 
     document.querySelector('.footer').classList.toggle('light');
