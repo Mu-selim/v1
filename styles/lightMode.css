@@ -158,6 +158,37 @@ body.light-scroll::-webkit-scrollbar-track {
     stroke: var(--green);
 }
 
+.otherWorkHeader.light h2 {
+    color: var(--navy);
+}
+
+.grid.light {
+    background-color: var(--slate);
+}
+
+.folderLinkIcon.light svg {
+    stroke: var(--navy);
+}
+
+.gitExternalIcons.light a svg {
+    stroke: var(--navy);
+}
+
+.gitExternalIcons.light a svg:hover {
+    stroke: var(--green);
+}
+
+.gridProjectTitle.light {
+    color: var(--dark-navy);
+}
+
+.gridProjectDescription.light {
+    color: var(--light-navy);
+}
+
+.gridProjectTechList.light {
+    color: var(--lightest-navy);
+}
 
 
 

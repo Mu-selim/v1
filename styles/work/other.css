@@ -16,6 +16,7 @@
     color: var(--lightest-slate);
     line-height: 1.1;
     font-family: var(--font-sans);
+    transition: all 0.2s;
 }
 
 .workGridBox {
@@ -29,8 +30,7 @@
 .grid {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
-    padding: 32px;
+    padding: 28px;
     background-color: var(--light-navy);
     box-shadow: 0 10px 30px -15px var(--navy-shadow);
     gap: 20px;
@@ -59,13 +59,17 @@
     gap: 12px;
 }
 
-.gitExternalIcons svg {
-    width: 24px;
+.gitExternalIcons a {
+    text-decoration: none;
+}
+
+.gitExternalIcons a svg {
+    width: 20px;
     stroke: var(--light-slate);
     transition: all 0.2s;
 }
 
-.gitExternalIcons svg:hover {
+.gitExternalIcons a svg:hover {
     stroke: var(--green);
 }
 

@@ -53,6 +53,22 @@ mode.addEventListener('click', ()=> {
     document.querySelectorAll('.linkIcons').forEach(item => {
         item.classList.toggle('light');
     });
+    document.querySelector('.otherWorkHeader').classList.toggle('light');
+    document.querySelectorAll('.grid').forEach(item => {
+        item.classList.toggle('light');
+    });
+    document.querySelectorAll('.folderLinkIcon').forEach(item => {
+        item.classList.toggle('light');
+    });
+    document.querySelectorAll('.gridProjectTitle').forEach(item => {
+        item.classList.toggle('light');
+    });
+    document.querySelectorAll('.gridProjectDescription').forEach(item => {
+        item.classList.toggle('light');
+    });
+    document.querySelectorAll('.gridProjectTechList').forEach(item => {
+        item.classList.toggle('light');
+    });
 
 
 

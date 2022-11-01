@@ -31,6 +31,11 @@ featuredList.insertAdjacentHTML('beforeend', AdviceGeneratorProject());
 featuredList.insertAdjacentHTML('beforeend', SunnysideProject());
 featuredList.insertAdjacentHTML('beforeend', IntroSectionProject());
 
+const workGridBox = document.querySelector('.workGridBox');
+for(let i = 0; i < 3; i++) {
+    workGridBox.insertAdjacentHTML('beforeend', personalWebsiteV1());
+}
+
 const githubStarFork = () => {
     const githubStars = document.querySelector('.githubStars');
     let component = `
