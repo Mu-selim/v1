@@ -207,9 +207,34 @@ body.light-scroll::-webkit-scrollbar-track {
     border-bottom-color: transparent;
 }
 
+.contactBox.light .contactHeader {
+    color: var(--navy);
+}
+
+.contactBox.light .contactHeader::before {
+    color: var(--green);
+}
+
+.contactBox.light h2 {
+    color: var(--dark-navy);
+}
+
+.contactBox.light p {
+    color: var(--lightest-navy);
+}
+
+.contactBox.light a {
+    border-color: var(--navy);
+    color: var(--navy);
+}
+
+.contactBox.light a:hover {
+    background-color: var(--green);
+}
 
 .footer.light {
     background: var(--white);
+    transition: all 0.2s;
 }
 
 .footerLink.light {

@@ -1,5 +1,5 @@
 .workBox {
-    padding: 100px 12%;
+    padding: 100px 12% 60px 12%;
     display: flex;
     flex-direction: column;
 }

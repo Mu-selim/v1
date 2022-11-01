@@ -1,0 +1,73 @@
+.contactBox {
+    padding: 60px 100px;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactHeader {
+    font-size: clamp(16px,5vw,24px);
+    font-family: var(--font-sans);
+    margin-bottom: 8px;
+    color: var(--green);
+    font-weight: 200;
+}
+
+.contactHeader::before {
+    position: relative;
+    content: "04.";
+    margin-right: 10px;
+    font-weight: 200;
+}
+
+.getInTouch {
+    font-size: clamp(32px, 10vw, 48px);
+    font-weight: 600;
+    color: var(--lightest-slate);
+    line-height: 1.1;
+    font-family: var(--font-sans);
+    white-space: nowrap;
+}
+
+.contactBox p {
+    padding: 0px 20%;
+    text-align: center;
+    color: var(--slate);
+    font-family: var(--font-sans);
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.contactBox a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--green);
+    padding: 12px 20px;
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+.contactBox a:hover {
+    background-color: var(--green-tint);
+}
+
+@media screen and (max-width: 770px) {
+    .contactBox {
+        padding: 60px 20px;
+        width: calc(100% - 40px);
+    }
+
+    .contactBox p {
+        padding: 0px 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .contactBox p {
+        padding: 0px 5%;
+        font-size: 1rem;
+    }
+}

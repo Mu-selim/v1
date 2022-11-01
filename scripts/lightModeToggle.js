@@ -70,7 +70,7 @@ mode.addEventListener('click', ()=> {
         item.classList.toggle('light');
     });
     document.querySelector('.showMore').classList.toggle('light');
-
+    document.querySelector('.contactBox').classList.toggle('light');
 
     document.querySelector('.footer').classList.toggle('light');
     document.querySelector('.footerLink').classList.toggle('light');
