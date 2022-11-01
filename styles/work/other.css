@@ -97,6 +97,7 @@
 
 .gridProjectTechList {
     list-style: none;
+    margin-top: auto;
     margin-right: 40px;
     font-size: 0.8rem;
     display: flex;
@@ -152,6 +153,10 @@
 @media screen and (max-width: 300px) {
     .grid {
         padding: 20px;
+    }
+
+    .gridProjectDescription {
+        font-size: 1rem;
     }
 
     .showMore {

@@ -1,8 +1,8 @@
-const personalWebsiteV1 = () => {
-    const githubLink = "",
-          externalLink = "",
-          projectTitle = "Personal Website V1",
-          projectDescription = "The first iteration of my personal website. Developed with pure javascript, CSS, and HTML.";
+const profileCard = () => {
+    const githubLink = "https://github.com/Mu-selim/profile-card-component",
+          externalLink = "https://mu-selim.github.io/profile-card-component",
+          projectTitle = "Card Component",
+          projectDescription = "A personal card component shows the deployment of the information of a person.";
     return `
     <div class="grid">
         <header class="folderLinkIcon">
@@ -19,8 +19,6 @@ const personalWebsiteV1 = () => {
         <h3 class="gridProjectTitle">${projectTitle}</h3>
         <p class="gridProjectDescription">${projectDescription}</p>
         <ul class="gridProjectTechList">
-            <li>JavaScript</li>
-            <li>GitHub API</li>
             <li>CSS</li>
             <li>HTML</li>
         </ul>

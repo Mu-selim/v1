@@ -1,7 +1,14 @@
-let projects = [];
-for(let i = 0; i < 11; i++) {
-    projects.push(personalWebsiteV1());
-}
+let projects = [
+    personalWebsiteV1(), 
+    profileFetch(),
+    nextSysytem(),
+    weatherApp(),
+    udacityLandingPage(),
+    podcastApp(),
+    microsoftPortfolio(),
+    orderSummary(),
+    profileCard(),
+];
 
 const initialProjects = () => {
     const workGridBox = document.querySelector('.workGridBox');

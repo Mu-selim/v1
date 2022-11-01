@@ -1,8 +1,8 @@
-const personalWebsiteV1 = () => {
-    const githubLink = "",
+const nextSysytem = () => {
+    const githubLink = "https://github.com/Mu-selim/Empolyee-Management-System-Next",
           externalLink = "",
-          projectTitle = "Personal Website V1",
-          projectDescription = "The first iteration of my personal website. Developed with pure javascript, CSS, and HTML.";
+          projectTitle = "Next Mangement System",
+          projectDescription = "An employee management system windows application which is built and released using (C#) .net framework and MS SQL server.";
     return `
     <div class="grid">
         <header class="folderLinkIcon">
@@ -11,18 +11,14 @@ const personalWebsiteV1 = () => {
                 <a href="${githubLink}" target="_blank">
                     ${githubIcon()}
                 </a>
-                <a href="${externalLink}" target="_blank">
-                    ${externalIcon()}
-                </a>
             </div>
         </header>
         <h3 class="gridProjectTitle">${projectTitle}</h3>
         <p class="gridProjectDescription">${projectDescription}</p>
         <ul class="gridProjectTechList">
-            <li>JavaScript</li>
-            <li>GitHub API</li>
-            <li>CSS</li>
-            <li>HTML</li>
+            <li>C#</li>
+            <li>MSSQL</li>
+            <li>.NET framework</li>
         </ul>
     </div>`;
 }

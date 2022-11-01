@@ -1,8 +1,8 @@
-const personalWebsiteV1 = () => {
-    const githubLink = "",
-          externalLink = "",
-          projectTitle = "Personal Website V1",
-          projectDescription = "The first iteration of my personal website. Developed with pure javascript, CSS, and HTML.";
+const weatherApp = () => {
+    const githubLink = "https://github.com/Mu-selim/Weather-Journal-App",
+          externalLink = "https://weather-journal-app-js.herokuapp.com/",
+          projectTitle = "Weather App",
+          projectDescription = "An asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.";
     return `
     <div class="grid">
         <header class="folderLinkIcon">
@@ -20,9 +20,8 @@ const personalWebsiteV1 = () => {
         <p class="gridProjectDescription">${projectDescription}</p>
         <ul class="gridProjectTechList">
             <li>JavaScript</li>
-            <li>GitHub API</li>
+            <li>OpenWeather API</li>
             <li>CSS</li>
-            <li>HTML</li>
         </ul>
     </div>`;
 }

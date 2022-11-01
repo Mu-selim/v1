@@ -1,8 +1,8 @@
-const personalWebsiteV1 = () => {
-    const githubLink = "",
-          externalLink = "",
-          projectTitle = "Personal Website V1",
-          projectDescription = "The first iteration of my personal website. Developed with pure javascript, CSS, and HTML.";
+const udacityLandingPage  = () => {
+    const githubLink = "https://github.com/Mu-selim/landing-page-udacity",
+          externalLink = "https://mu-selim.github.io/landing-page-udacity",
+          projectTitle = "Udacity Landing Page",
+          projectDescription = "The first project in FWD professional web program to apply the knowledge of JavaScript and the Document Object Model (DOM) by buliding a multi-section page with a dynamically navigation menu.";
     return `
     <div class="grid">
         <header class="folderLinkIcon">
@@ -20,9 +20,9 @@ const personalWebsiteV1 = () => {
         <p class="gridProjectDescription">${projectDescription}</p>
         <ul class="gridProjectTechList">
             <li>JavaScript</li>
-            <li>GitHub API</li>
-            <li>CSS</li>
-            <li>HTML</li>
+            <li>DOM</li>
+            <li>dynamic navigation</li>
+            <li>responsive</li>
         </ul>
     </div>`;
 }
