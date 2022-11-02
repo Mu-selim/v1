@@ -1,7 +1,3 @@
-onload = ()=> {
-    document.querySelector('body').classList.add(localStorage.getItem('pageTheme'));
-}
-
 const socialIcons = document.querySelectorAll('.socialIcons');
 socialIcons[0].insertAdjacentHTML('afterbegin', githubIcon());
 socialIcons[1].insertAdjacentHTML('afterbegin', twitterIcon());
