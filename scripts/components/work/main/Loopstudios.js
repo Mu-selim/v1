@@ -1,6 +1,6 @@
 const LoopStudiosProject = () => {
 
-    const imageLink = "https://user-images.githubusercontent.com/89293751/198900434-091889e4-3c1d-46ac-93e2-5cf69ad57f8f.jpg";
+    const imageLink = "images/projects/LoopstudiosLandingPage.jpg";
     const repoLink = "https://github.com/Mu-selim/Loopstudios-landing-page";
     const deploymentLink = "https://mu-selim.github.io/Loopstudios-landing-page";
 

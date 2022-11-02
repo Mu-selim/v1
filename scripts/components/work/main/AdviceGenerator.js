@@ -1,5 +1,5 @@
 const AdviceGeneratorProject = () => {
-    const imageLink = "https://user-images.githubusercontent.com/89293751/199070472-d2d5bdb3-d25d-44fe-8a34-0162202def2b.jpg";
+    const imageLink = "images/projects/adviceGenerator.jpg";
     const repoLink = "https://github.com/Mu-selim/Advice-generator-app";
     const deploymentLink = "https://mu-selim.github.io/Advice-generator-app";
     

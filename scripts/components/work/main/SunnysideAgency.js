@@ -1,5 +1,5 @@
 const SunnysideProject = () => {
-    const imageLink = "https://user-images.githubusercontent.com/89293751/199070486-6a31394d-f871-4a7c-9c3e-8dc8c0e667d9.jpg";
+    const imageLink = "images/projects/SunnysideLandingPage.jpg";
     const repoLink = "https://github.com/Mu-selim/Sunnyside-landing-page";
     const deploymentLink = "https://mu-selim.github.io/Sunnyside-landing-page/";
     
