@@ -370,10 +370,12 @@
     background-color: var(--white);
 }
 
-.bodyLight .footerLink {
+.bodyLight .footerLink,
+.bodyLight .designer {
     color: var(--dark-navy);
 }
 
-.bodyLight .footerLink:hover {
+.bodyLight .footerLink:hover,
+.bodyLight .designer:hover {
     color: var(--blue);
 }

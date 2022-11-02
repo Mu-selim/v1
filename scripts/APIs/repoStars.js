@@ -1,5 +1,5 @@
 const repoStarsForks = async () => {
-    await fetch('https://api.github.com/repos/Mu-selim/Empolyee-Management-System-Next')
+    await fetch('https://api.github.com/repos/Mu-selim/v1')
     .then(res => res.json())
     .then(res => {
         const {stargazers_count: stars, forks_count: forks} = res;

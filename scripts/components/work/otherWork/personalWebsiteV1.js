@@ -1,8 +1,8 @@
 const personalWebsiteV1 = () => {
-    const githubLink = "",
-          externalLink = "",
+    const githubLink = "https://github.com/Mu-selim/v1",
+          externalLink = "https://muhammadselim.pages.dev",
           projectTitle = "Personal Website V1",
-          projectDescription = "The first iteration of my personal website. Developed with pure javascript, CSS, and HTML.";
+          projectDescription = "The first version of my personal website. Developed with pure javascript, CSS, and HTML.";
     return `
     <div class="grid">
         <header class="folderLinkIcon">
