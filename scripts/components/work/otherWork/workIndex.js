@@ -32,7 +32,7 @@ initialProjects();
 
 const otherWork = document.querySelector('.showMore');
 otherWork.addEventListener('click', ()=> {
-    const loader = document.querySelector('.LoadingBox div');
+    const loader = document.querySelector('.LoadingBox div'),
           loadText = document.querySelector('.showMore h3');
     loader.classList.add('buttonLoading');
     loadText.style.opacity = "0";
@@ -43,6 +43,11 @@ otherWork.addEventListener('click', ()=> {
         } else {
             loadText.textContent = "Show More";
             initialProjects(); 
+        }
+        if(document.querySelector('.mode').classList.contains('light')) {
+            document.querySelectorAll('.grid').forEach(grid => {
+                grid.classList.add('light');
+            });
         }
         loader.classList.remove('buttonLoading');
         loadText.style.opacity = "1";

@@ -1,10 +1,11 @@
 const ibm = () => {
+    const companyLink = "https://www.ibm.com/eg-en";
     return `
     <h3>
         <span class="jobTitle">Software Intern</span>
         <span class="company">
             @
-            <a class="placeName" href="" target="_blank" rel="">IBM eg</a>
+            <a class="placeName" href="${companyLink}" target="_blank" rel="">IBM eg</a>
         </span>
     </h3>
     <p class="range">February 2022 - March 2022</p>

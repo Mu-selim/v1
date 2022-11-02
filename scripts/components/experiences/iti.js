@@ -1,10 +1,11 @@
 const iti = () => {
+    const companyLink = "https://www.iti.gov.eg";
     return `
     <h3>
         <span class="jobTitle">Front-end Intern</span>
         <span class="company">
             @
-            <a class="placeName" href="" target="_blank" rel="">ITI</a>
+            <a class="placeName" href="${companyLink}" target="_blank" rel="">ITI</a>
         </span>
     </h3>
     <p class="range">February 2022 - March 2022</p>

@@ -1,10 +1,11 @@
 const acm = () => {
+    const companyLink = "https://www.acm.org";
     return `
     <h3>
         <span class="jobTitle">Chairman</span>
         <span class="company">
             @
-            <a class="placeName" href="" target="_blank" rel="">ACM Mansoura</a>
+            <a class="placeName" href="${companyLink}" target="_blank" rel="">ACM Mansoura</a>
         </span>
     </h3>
     <p class="range">May 2022 - October 2022</p>

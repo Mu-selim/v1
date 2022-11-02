@@ -166,27 +166,31 @@ body.light-scroll::-webkit-scrollbar-track {
     background-color: var(--slate);
 }
 
-.folderLinkIcon.light svg {
+.grid.light .folderLinkIcon svg {
     stroke: var(--navy);
 }
 
-.gitExternalIcons.light a svg {
+.grid.light .gitExternalIcons a svg {
     stroke: var(--navy);
 }
 
-.gitExternalIcons.light a svg:hover {
+.grid.light .gitExternalIcons a svg:hover {
     stroke: var(--green);
 }
 
-.gridProjectTitle.light {
+.grid.light .gridProjectTitle {
     color: var(--dark-navy);
 }
 
-.gridProjectDescription.light {
+.grid.light:hover .gridProjectTitle {
+    color: var(--green);
+}
+
+.grid.light .gridProjectDescription {
     color: var(--light-navy);
 }
 
-.gridProjectTechList.light {
+.grid.light .gridProjectTechList {
     color: var(--lightest-navy);
 }
 

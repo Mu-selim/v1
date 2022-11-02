@@ -1,10 +1,11 @@
 const gmind = () => {
+    const companyLink = "https://www.linkedin.com/company/gmind/mycompany";
     return `
     <h3>
         <span class="jobTitle">Developer Intern</span>
         <span class="company">
             @
-            <a class="placeName" href="" target="_blank" rel="">Gmind</a>
+            <a class="placeName" href="${companyLink}" target="_blank" rel="">Gmind</a>
         </span>
     </h3>
     <p class="range">August 2022 - Present</p>
