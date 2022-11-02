@@ -1,5 +1,5 @@
 const AdviceGeneratorProject = () => {
-    const imageLink = "images/projects/adviceGenerator.jpg";
+    const imageLink = "images/projects/adviceGenerator.webp";
     const repoLink = "https://github.com/Mu-selim/Advice-generator-app";
     const deploymentLink = "https://mu-selim.github.io/Advice-generator-app";
     

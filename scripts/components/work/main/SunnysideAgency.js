@@ -1,5 +1,5 @@
 const SunnysideProject = () => {
-    const imageLink = "images/projects/SunnysideLandingPage.jpg";
+    const imageLink = "images/projects/SunnysideLandingPage.webp";
     const repoLink = "https://github.com/Mu-selim/Sunnyside-landing-page";
     const deploymentLink = "https://mu-selim.github.io/Sunnyside-landing-page/";
     

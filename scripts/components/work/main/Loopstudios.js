@@ -1,6 +1,6 @@
 const LoopStudiosProject = () => {
 
-    const imageLink = "images/projects/LoopstudiosLandingPage.jpg";
+    const imageLink = "images/projects/LoopstudiosLandingPage.webp";
     const repoLink = "https://github.com/Mu-selim/Loopstudios-landing-page";
     const deploymentLink = "https://mu-selim.github.io/Loopstudios-landing-page";
 

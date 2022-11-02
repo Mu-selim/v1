@@ -1,5 +1,5 @@
 const IntroSectionProject = () => {
-    const imageLink = "images/projects/IntroSection.jpg";
+    const imageLink = "images/projects/IntroSection.webp";
     const repoLink = "https://github.com/Mu-selim/Intro-section-with-dropdown-navigation";
     const deploymentLink = "https://mu-selim.github.io/Intro-section-with-dropdown-navigation/";
     
