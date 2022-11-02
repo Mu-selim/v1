@@ -1,250 +1,379 @@
-.mode.light {
-    background-image: url("../images/night-mode.png");
-}
-
-body.light-scroll::-webkit-scrollbar-thumb {
+/* scroll bar */
+.bodyLight::-webkit-scrollbar-thumb {
     border-color: var(--light-slate-transparent);
 }
 
-body.light-scroll::-webkit-scrollbar-track {
+.bodyLight::-webkit-scrollbar-thumb {
+    border-color: var(--light-slate-transparent);
+}
+
+.bodyLight::-webkit-scrollbar-track {
     background-color: var(--light-slate-transparent);
 }
 
-.navbarBox.light {
-    background-color: var(--light-slate-transparent);
+/* vertical columns */
+.bodyLight .socialIcons svg {
+    stroke: var(--navy);
 }
 
-.container.light {
+.bodyLight .socialIcons:hover svg {
+    stroke: var(--blue);
+}
+
+.bodyLight .verticalLine {
+    background-color: var(--navy);
+}
+
+.bodyLight .emailText {
+    color: var(--navy);
+}
+
+.bodyLight .emailText:hover {
+    color: var(--blue);
+}
+
+/* container */
+.bodyLight .container {
     background-color: var(--white);
 }
 
-.anchorNav.light, .listItem:last-child .anchorNav.light {
+/* navigation bar */
+.bodyLight .navbarBox {
+    background-color: var(--light-slate-transparent);
+}
+
+.bodyLight .anchorNav {
     color: var(--navy);
 }
 
-.listBox.active.light {
+.bodyLight .anchorNav:hover {
+    color: var(--blue);
+}
+
+.bodyLight .listItem:last-child {
+    border-color: var(--blue);
+}
+
+.bodyLight .listItem:last-child:hover {
+    background-color: var(--blue-tint);
+}
+
+.bodyLight .listItem:last-child .anchorNav {
+    color: var(--navy);
+    border: none;
+}
+
+.bodyLight .itemNum {
+    color: var(--blue);
+}
+
+.bodyLight .mode {
+    background-image: url("../images/night-mode.png");
+}
+
+.bodyLight .hamburgerLine {
+    background-color: var(--blue);
+}
+
+.bodyLight .listBox.active {
     background-color: var(--light-slate);
 }
 
-.listItem:hover .anchorNav {
-    color: var(--green);
+/* Intro Section */
+.bodyLight .introBox h4 {
+    color: var(--blue);
 }
 
-.socialIcons.light svg {
-    stroke: var(--navy);
+.bodyLight .name {
+    color: var(--dark-navy);
 }
 
-.socialIcons.light:hover svg {
-    stroke: var(--green);
-}
-
-.verticalLine.light {
-    background-color: var(--navy);
-}
-
-.emailText.light {
+.bodyLight .description {
     color: var(--navy);
 }
 
-.emailText.light:hover {
-    color: var(--green);
-}
-
-.name.light {
-    color: var(--navy);
-}
-
-.description.light {
-    color: var(--light-navy);
-}
-
-.summary p.light {
+.bodyLight .introBox p {
     color: var(--lightest-navy);
 }
 
-.upwork.light::before {
-    background: var(--navy);
+.bodyLight .introBox p .upwork {
+    color: var(--blue);
 }
 
-.checkGithub.light {
+.bodyLight .introBox p .upwork::before {
+    background-color: var(--blue);
+}
+
+.bodyLight .checkGithub {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.bodyLight .checkGithub:hover {
     color: var(--navy);
-    border-color: var(--navy);
+    background-color: var(--blue);
 }
 
-.sectionHeading.light {
-    color: var(--navy);
+/* About Section */
+.bodyLight .sectionNumber {
+    color: var(--blue);
 }
 
-.sectionLine.light {
-    background-color: var(--navy);
+.bodyLight .sectionHeading {
+    color: var(--dark-navy);
 }
 
-.aboutText p.light {
-    color: var(--light-navy);
+.bodyLight .sectionLine {
+    background-color: var(--blue);
 }
 
-.workPlaces.light::before,
-.nanodegree.light::before {
-    background: var(--navy);
+.bodyLight .aboutText p {
+    color: var(--lightest-navy);
 }
 
-.technologyItem.light {
-    color: var(--light-navy);
+.bodyLight .workPlaces,
+.bodyLight .nanodegree {
+    color: var(--blue);
 }
 
-.personalImage.light::before {
-    border-color: var(--navy);
+.bodyLight .workPlaces::before,
+.bodyLight .nanodegree::before {
+    background-color: var(--blue);
 }
 
-.experienceHeader.light {
-    color: var(--navy);
+.bodyLight .technologiesList {
+    color: var(--lightest-navy);
 }
 
-.experienceHeader.light {
-    color: var(--navy);
+.bodyLight .technologyItem::before {
+    color: var(--blue);
 }
 
-.placesListItems.light {
-    color: var(--navy);
+.bodyLight .personalImage::before {
+    border-color: var(--blue);
 }
 
-.placesListItems.light:hover {
-    background: var(--lightest-slate);
+.bodyLight .personalImage:hover::after {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
-.placesInner.light h3 .jobTitle {
-    color: var(--navy);
+/* Experience Section */
+.bodyLight .experienceHeader {
+    color: var(--dark-navy);
 }
 
-.placesInner.light .range {
-    color: var(--light-navy);
+.bodyLight .experienceHeader::before {
+    color: var(--blue);
 }
 
-.placesInner.light .jobDecription li {
-    color: var(--dark-slate);
+.bodyLight .experienceHeader::after {
+    background-color: var(--blue);
 }
 
-.workHeader.light {
-    color: var(--navy);
+.bodyLight .placesList::before {
+    background-color: transparent;
 }
 
-.featuredProjectTitle.light {
-    color: var(--navy);
+.bodyLight .placesListItems {
+    color: var(--blue);
 }
 
-.featuredCard.light {
+.bodyLight .placesListItems:hover {
     background-color: var(--lightest-slate);
 }
 
-@media screen and (max-width: 600px) {
-    .featuredCard.light {
-        background-color: transparent;
+.bodyLight .placesListItems.active::before {
+    background-color: var(--blue);
+}
+
+.bodyLight .placesListItems.active::after {
+    background-color: var(--blue);
+}
+
+.bodyLight h3 .jobTitle {
+    color: var(--dark-navy);
+}
+
+.bodyLight h3 .company {
+    color: var(--blue);
+}
+
+.bodyLight .placeName {
+    color: var(--blue);
+}
+
+.bodyLight .placeName::before {
+    background: var(--blue);
+}
+
+.bodyLight .range {
+    color: var(--lightest-navy);
+}
+
+.bodyLight .jobDecriptionItem {
+    color: var(--light-navy);
+}
+
+.bodyLight .jobDecriptionItem::before {
+    color: var(--blue);
+}
+
+@media screen and (max-width: 700px) {
+    .bodyLight .placesList::-webkit-scrollbar-thumb {
+        border-color: var(--light-slate-transparent);
+    }
+    
+    .bodyLight .placesList::-webkit-scrollbar-thumb {
+        border-color: var(--light-slate-transparent);
+    }
+    
+    .bodyLight .placesList::-webkit-scrollbar-track {
+        background-color: var(--light-slate-transparent);
     }
 }
 
-.featuredCard.light p {
-    color: var(--light-navy);
-}
-
-.toolsList.light {
-    color: var(--lightest-navy);
-}
-
-.linkIcons.light a svg {
-    stroke: var(--navy);
-}
-
-.linkIcons.light a:hover svg {
-    stroke: var(--green);
-}
-
-.otherWorkHeader.light h2 {
-    color: var(--navy);
-}
-
-.grid.light {
-    background-color: var(--slate);
-}
-
-.grid.light .folderLinkIcon svg {
-    stroke: var(--navy);
-}
-
-.grid.light .gitExternalIcons a svg {
-    stroke: var(--navy);
-}
-
-.grid.light .gitExternalIcons a svg:hover {
-    stroke: var(--green);
-}
-
-.grid.light .gridProjectTitle {
+/* Work Section */
+.bodyLight .workHeader {
     color: var(--dark-navy);
 }
 
-.grid.light:hover .gridProjectTitle {
-    color: var(--green);
+.bodyLight .workHeader::before {
+    color: var(--blue);
 }
 
-.grid.light .gridProjectDescription {
+.bodyLight .workHeader::after {
+    background-color: var(--blue);
+}
+
+.bodyLight .featuredProjects {
+    color: var(--blue);
+}
+
+.bodyLight .featuredProjectTitle {
+    color: var(--dark-navy);
+}
+
+.bodyLight .featuredCard {
+    background-color: var(--light-slate);
+}
+
+.bodyLight .featuredCard p {
     color: var(--light-navy);
 }
 
-.grid.light .gridProjectTechList {
+.bodyLight .toolsList {
+    color: var(--light-navy);
+}
+
+.bodyLight .toolsPackages {
+    color: var(--blue);
+}
+
+.bodyLight .toolsPackages::before {
+    background-color: var(--blue);
+}
+
+@media screen and (max-width: 600px) {
+    .bodyLight .featuredItems:nth-child(n) .projectContent .innerFeatured {
+        background-color: var(--lightest-slate);
+    }
+
+    .bodyLight .featuredCard {
+        background-color: transparent;
+    }
+
+    .bodyLight .linkIcons a svg {
+        stroke: var(--navy);
+    }  
+
+    .bodyLight .linkIcons a:hover svg {
+        stroke: var(--blue);
+    }  
+}
+
+.bodyLight .otherWorkHeader h2 {
+    color: var(--dark-navy);
+}
+
+.bodyLight .grid {
+    background-color: var(--light-slate);
+}
+
+.bodyLight .folderLinkIcon svg,
+.bodyLight .gitExternalIcons a svg {
+    stroke: var(--navy);
+}
+
+.bodyLight .gitExternalIcons a svg:hover {
+    stroke: var(--blue);
+}
+
+.bodyLight .gridProjectTitle {
+    color: var(--dark-navy);
+}
+
+.bodyLight .grid:hover .gridProjectTitle {
+    color: var(--blue);
+}
+
+.bodyLight .gridProjectDescription {
     color: var(--lightest-navy);
 }
 
-.showMore.light {
-    border: 1px solid var(--navy);
+.bodyLight .gridProjectTechList {
+    color: var(--lightest-navy);
 }
 
-.showMore.light:hover {
-    background-color: var(--green);
+.bodyLight .showMore {
+    border-color: var(--blue);
 }
 
-.showMore.light h3 {
-    color: var(--navy);
+.bodyLight .showMore:hover {
+    background-color: var(--blue-tint);
 }
 
-.showMore.light .LoadingBox .buttonLoading {
-    border: 2px solid var(--navy);
+.bodyLight .showMore h3 {
+    color: var(--blue);
+}
+
+.bodyLight .buttonLoading {
+    border-color: var(--blue);
     border-bottom-color: transparent;
 }
 
-.contactBox.light .contactHeader {
-    color: var(--navy);
+/* Contact Section */
+.bodyLight .contactHeader {
+    color: var(--blue);
 }
 
-.contactBox.light .contactHeader::before {
-    color: var(--green);
-}
-
-.contactBox.light h2 {
+.bodyLight .getInTouch {
     color: var(--dark-navy);
 }
 
-.contactBox.light p {
+.bodyLight .contactBox p {
     color: var(--lightest-navy);
 }
 
-.contactBox.light a {
-    border-color: var(--navy);
-    color: var(--navy);
+.bodyLight .contactBox a {
+    border-color: var(--lightest-navy);
+    color: var(--lightest-navy);
 }
 
-.contactBox.light a:hover {
-    background-color: var(--green);
+.bodyLight .contactBox a:hover {
+    background-color: var(--blue);
+    color: var(--dark-navy);
 }
 
-.footer.light {
-    background: var(--white);
-    transition: all 0.2s;
+/* Footer */
+.bodyLight .footer {
+    background-color: var(--white);
 }
 
-.footerLink.light {
-    color: var(--navy);
+.bodyLight .footerLink {
+    color: var(--dark-navy);
 }
 
-.footerLink:hover.light {
-    color: var(--green);
+.bodyLight .footerLink:hover {
+    color: var(--blue);
 }
