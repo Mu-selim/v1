@@ -1,6 +1,7 @@
 let projects = [
     personalWebsiteV1(), 
     profileFetch(),
+    calculator(),
     nextSysytem(),
     weatherApp(),
     udacityLandingPage(),
