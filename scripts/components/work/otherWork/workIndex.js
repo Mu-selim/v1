@@ -5,6 +5,7 @@ let projects = [
     nextSysytem(),
     weatherApp(),
     udacityLandingPage(),
+    QRapp(),
     podcastApp(),
     microsoftPortfolio(),
     orderSummary(),
