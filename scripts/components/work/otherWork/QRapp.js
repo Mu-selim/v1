@@ -16,9 +16,9 @@ const QRapp = () => {
         <h3 class="gridProjectTitle">${projectTitle}</h3>
         <p class="gridProjectDescription">${projectDescription}</p>
         <ul class="gridProjectTechList">
-            <li>JavaScript</li>
-            <li>Stack</li>
-            <li>CSS</li>
+            <li>Java</li>
+            <li>Android</li>
+            <li>XML</li>
         </ul>
     </div>`;
 }
